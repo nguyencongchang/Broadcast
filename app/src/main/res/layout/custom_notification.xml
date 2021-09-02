@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="64dp">
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/IMGSONG"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/bigcityboiz"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+        android:layout_toStartOf="@+id/img_PLAY_PAUSE"
+        android:layout_toEndOf="@+id/IMGSONG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/IMGSONG"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/img_PLAY_PAUSE">
+        <TextView
+            android:id="@+id/TV_TITLE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chang Nguyen"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Chang"
+            android:id="@+id/TV_SINGER_SONG"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_CLEAR"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_clear"
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:id="@+id/img_PLAY_PAUSE"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_pause"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/img_CLEAR" />
+
+</RelativeLayout>
